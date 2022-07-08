@@ -214,7 +214,7 @@ body li {
     flex-direction: column;
     min-height: 100%;
     text-align: center;
-    margin: auto;
+    margin-top: 40px;
     justify-content: center;
     align-items: center;
   }
@@ -777,6 +777,10 @@ hr {
 @media (max-width: 425px) {
   .still-confused__text {
     margin: auto;
+  }
+
+  .circle {
+    max-width: 100%;
   }
 }
 .graduates {
