@@ -6,6 +6,7 @@ $pinkiecolor: #DC4298;
 
 body {
   font-family: "Maven Pro";
+  overflow-x: hidden;
   h1,h2,h3,h4,h5,h6, p {
     font-size: 16px;
     font-weight: 500;
@@ -132,6 +133,14 @@ body {
   .header__button {
     margin: 0;
   }
+  .menu__list {
+    gap: 40px;
+  }
+  .header__logo {
+    h1 {
+      display: none;
+    }
+  }
 } 
 
 .btn-transparent {
@@ -160,9 +169,6 @@ body {
       flex: 1 1 auto;
       margin-bottom: 20px;
       align-items: flex-start;
-      h1 {
-        display: none;
-      }
     }
   }
 
@@ -662,9 +668,9 @@ hr {
   align-items: center;
   img{
     position: relative;
+    object-fit: contain;
     width: 500px;
     height: 366px;
-    object-fit: contain;
     top: 50px;
     z-index: 2;
   }  
@@ -690,6 +696,9 @@ hr {
     align-self: center;
     margin-bottom: 60px;
   }
+  .still-confused__text {
+    margin-right: 0;
+  }
 }
 
 .circle {
@@ -708,7 +717,12 @@ hr {
     margin: auto;
   }
   .circle {
-    max-width: 100%;
+    display: none;
+  }
+  .still-confused__img {
+    img {
+      object-fit: cover;
+    }
   }
 }
 

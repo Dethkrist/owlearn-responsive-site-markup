@@ -71,6 +71,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: "Maven Pro";
+  overflow-x: hidden;
 }
 body h1, body h2, body h3, body h4, body h5, body h6, body p {
   font-size: 16px;
@@ -195,6 +196,12 @@ body li {
   .header__button {
     margin: 0;
   }
+  .menu__list {
+    gap: 40px;
+  }
+  .header__logo h1 {
+    display: none;
+  }
 }
 .btn-transparent {
   width: 168px;
@@ -223,10 +230,6 @@ body li {
     margin-bottom: 20px;
     align-items: flex-start;
   }
-  .header__container .header__logo h1 {
-    display: none;
-  }
-
   .menu__list {
     margin: auto;
     text-align: center;
@@ -236,7 +239,6 @@ body li {
     justify-content: center;
     margin-bottom: 40px;
   }
-
   .menu__link {
     width: 100%;
     font-weight: 700;
@@ -301,7 +303,6 @@ body li {
     align-content: center;
     justify-content: center;
   }
-
   .explore-path__img {
     margin-top: 40px;
   }
@@ -311,7 +312,6 @@ body li {
     -o-object-fit: cover;
        object-fit: cover;
   }
-
   .explore-path__info {
     margin: auto;
     display: flex;
@@ -322,21 +322,17 @@ body li {
   .explore-path {
     margin-top: 500px;
   }
-
   .explore-path__img {
     display: none;
   }
-
   .explore-path__button {
     flex-direction: column;
     gap: 50px;
   }
-
   .explore-path__line {
     max-width: 100%;
     height: auto;
   }
-
   [class*=__container] {
     justify-content: center;
     align-items: center;
@@ -374,13 +370,11 @@ body li {
   .partners {
     margin-top: 20px;
   }
-
   .partners__container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
   .partners__title {
     margin: auto;
     margin-bottom: 20px;
@@ -477,7 +471,6 @@ body li {
     max-width: 100%;
     height: auto;
   }
-
   .become-member__img-title {
     font-size: 16px;
   }
@@ -569,7 +562,6 @@ hr {
   .discover-course__courses-list {
     grid-template-columns: repeat(1, 1fr);
   }
-
   .discover-course__switchers {
     flex-wrap: wrap;
     gap: 20px;
@@ -733,10 +725,10 @@ hr {
 }
 .still-confused__img img {
   position: relative;
-  width: 500px;
-  height: 366px;
   -o-object-fit: contain;
      object-fit: contain;
+  width: 500px;
+  height: 366px;
   top: 50px;
   z-index: 2;
 }
@@ -745,7 +737,6 @@ hr {
   .still-confused__button {
     margin-bottom: 30px;
   }
-
   .still-confused__text {
     margin-top: 30px;
   }
@@ -757,10 +748,12 @@ hr {
     align-items: center;
     text-align: center;
   }
-
   .still-confused__button {
     align-self: center;
     margin-bottom: 60px;
+  }
+  .still-confused__text {
+    margin-right: 0;
   }
 }
 .circle {
@@ -778,9 +771,12 @@ hr {
   .still-confused__text {
     margin: auto;
   }
-
   .circle {
-    max-width: 100%;
+    display: none;
+  }
+  .still-confused__img img {
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 .graduates {
@@ -882,16 +878,13 @@ hr {
     flex-direction: column;
     text-align: center;
   }
-
   .summary__img {
     margin: auto;
     margin-bottom: 20px;
   }
-
   .summary__info {
     padding: 0 20px;
   }
-
   .summary__link {
     margin: 25px 0px 0px 0px;
     display: flex;
